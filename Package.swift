@@ -7,7 +7,7 @@ let package = Package(
     name: "AccessibilitySnapshot",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v12),
+        .iOS(.v13),
     ],
     products: [
         // Core + SnapshotTesting for image comparison
@@ -25,7 +25,7 @@ let package = Package(
         .package(
             name: "SnapshotTesting",
             url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
-            .upToNextMajor(from: "1.9.0")
+            .upToNextMajor(from: "1.10.0")
         )
     ],
     targets: [
